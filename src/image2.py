@@ -89,9 +89,9 @@ class image_converter:
         self.green_pos_IMG2 = self.find_green(self.cv_image2)
         self.red_pos_IMG2 = self.find_red(self.cv_image2)
         templateS = "sphere.png"  # Consider changing this to your local path if not working similar to this :
-        # templateS = "/home/USERNAME/Project/catkin_ws/src/ivr_assignment/src/sphere.png"
+        # templateS = "/LOCAL_PATH/catkin_ws/src/ivr_assignment/src/sphere.png"
         templateR = "box.png"
-        # templateR = "/home/USERNAME/Project/catkin_ws/src/ivr_assignment/src/box.png"
+        # templateR = "/LOCAL_PATH/Project/catkin_ws/src/ivr_assignment/src/box.png"
 
         self.orange_target_ = self.target_3D_location(self.cv_image2, templateS)
         self.orange_box = self.box_3D_location(self.cv_image2, templateR)  # same function used with different template
