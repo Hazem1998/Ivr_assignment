@@ -253,7 +253,7 @@ class image_converter:
 
     def get_joint_angles(self, pos_3D_plane):
         [yellow, blue, green, red] = pos_3D_plane
-        link2 = green - blue
+        
 
         ### start with joint 2 since joint 1 does not rotate
         angle2 = np.arctan2(green[2] - blue[2], green[1] - blue[1])
