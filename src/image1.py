@@ -39,9 +39,9 @@ class image_converter:
         red = self.find_red(self.cv_image1)
         blue = self.find_blue(self.cv_image1)
         templateS = "sphere.png"  # Consider changing this to your local path if not working similar to this :
-        #templateS = "/home/USERNAME/Project/catkin_ws/src/ivr_assignment/src/sphere.png"
+        #templateS = "/home/USERNAME/LOCAL_PATH/catkin_ws/src/ivr_assignment/src/sphere.png"
         templateR = "box.png"
-        #templateR = "/home/USERNAME/Project/catkin_ws/src/ivr_assignment/src/box.png"
+        #templateR = "/home/USERNAME/LOCAL_PATH/catkin_ws/src/ivr_assignment/src/box.png"
         target_R = self.locate_target_sphere(self.cv_image1,
                                              templateR)  ## Same function would be used just with different template
 
