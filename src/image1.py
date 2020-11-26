@@ -23,7 +23,7 @@ class image_converter:
         # initialize the bridge between openCV and ROS
         self.bridge = CvBridge()
         self.cv_image1_data_pub = rospy.Publisher("/cv_image1/objects", Float64MultiArray,
-                                                  queue_size=10)  # mistake size not length
+                                                  queue_size=12)  # mistake size not length
 
     # Recieve data from camera 1, process it, and publish
     def callback1(self, data):
